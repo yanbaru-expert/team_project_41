@@ -10,7 +10,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+  <main>
+      <#% max_width メソッドは application_helper.rb に記載 %>
+      <div class="base-container <%= max_width %>">
+        <%= yield %>
+      </div>
+    </main>
+    <footer>
+    </footer>
 </html>
