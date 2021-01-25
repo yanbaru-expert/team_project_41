@@ -9,14 +9,26 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+<<<<<<< HEAD
+    
+=======
+    <header>
     <% if user_signed_in? %>
       <%= link_to "ログアウト", destroy_user_session_paht %>
     <% else %>
       <%= link_to "新規登録", new_user_registration_path %>
       <%= link_to "ログイン", new_user_session_path %>
     <% end %>
-    <%= yield %>
+    </header>
+    <main>
+      <#% max_width メソッドは application_helper.rb に記載 %>
+      <div class="base-container <%= max_width %>">
+        <%= yield %>
+      </div>
+    </main>
+    <footer>
+    </footer>
+>>>>>>> origin/develop
   </body>
 </html>
