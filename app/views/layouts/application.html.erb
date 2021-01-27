@@ -9,17 +9,22 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= yield %>
     <header>
+      <% if user_signed_in? %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { confirm: "ログアウトしますか？"} %>
+      <% else %>
+        <%= link_to "新規登録", new_user_registration_path %>
+        <%= link_to "ログイン", new_user_session_path %>
+      <% end %>
     </header>
     <main>
       <button type="button" class="btn btn-primary">Primary</button>
-      <#% max_width メソッドは application_helper.rb に記載 %>
-        <div class="base-container <%= max_width %>">
-          <%= yield %>
-        </div>
-      </main>
-      <footer>
-      </footer>
-    </body>
-  </html>
+      <%# max_width メソッドは application_helper.rb に記載 %>
+      <div class="base-container <%= max_width %>">
+        <%= yield %>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
