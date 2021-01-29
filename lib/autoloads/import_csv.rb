@@ -1,6 +1,7 @@
 class ImportCsv
   # CSVデータのパスを引数として受け取り、インポート処理を実行
   def self.import(path)
+    # 空の配列を格納
     list = []
     CSV.foreach(path, headers: true) do |row|
       list << row.to_h
@@ -10,7 +11,6 @@ class ImportCsv
 
   def self.movie_data
     list =  import('db/csv_data/movie_data.csv')
-
     puts "インポート処理を開始"
     Movie.create!(list)
     puts "インポート完了"
