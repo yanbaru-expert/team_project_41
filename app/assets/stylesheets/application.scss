@@ -6,10 +6,22 @@
 
 /* 全体 */
 
+body {
+  padding-top: 56px;
+}
+
 .base-container {
   margin: 0 auto;
   padding: 1rem;
 }
+
+.base-bg-color {
+  background-color: #5D99FB;
+}
+
+ .nav-link {
+   font-size: 0.8rem;
+ }
 
 /* max-width */
 
