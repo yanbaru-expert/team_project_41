@@ -6,3 +6,9 @@ User.find_or_create_by!(email: EMAIL) do |user|
   user.password = PASSWORD
   puts "ユーザーの初期データインポートに成功しました。"
 end
+
+ Movie.destroy_all
+ Text.destroy_all
+
+ ImportCsv.movie_data
+ ImportCsv.text_date

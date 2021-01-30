@@ -15,7 +15,7 @@ require "action_cable/engine"
 require "sprockets/railtie"
 require "csv"
 # require "rails/test_unit/railtie"
-
+require "csv"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -24,9 +24,8 @@ module TeamProject
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
-
+    # lib/autoloads ディレクトリ配下のファイルを読み込む
     config.autoload_paths << Rails.root.join("lib/autoloads")
-
     config.i18n.default_locale = :ja
     config.time_zone = "Asia/Tokyo"
 
