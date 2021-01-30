@@ -57,16 +57,16 @@
           <a class="dropdown-item" href="#">アカウント編集</a>
         </div>
       </li>
-      <li class="nav-item active">
-        <% if user_signed_in? %>
-          <a class="nav-link" href="link_to, destroy_user_session_path">ログアウト</a>
+      <% if user_signed_in? %>
+        <li class="nav-item active">
+          <%= link_to "ログアウト", destroy_user_session_path %>
         </li>
       <% else %>
         <li class="nav-item active">
-          <a class="nav-link" href="link_to, new_user_registration_path">新規登録</a>
+          <%= link_to "新規登録", new_user_registration_path %>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="link_to, new_user_session_path">ログイン</a>
+          <%= link_to "ログイン", new_user_session_path %>
         </li>
       <% end %>
     </ul>
