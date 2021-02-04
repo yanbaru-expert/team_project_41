@@ -12,9 +12,12 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
+<<<<<<< HEAD
 #管理者画面
 gem 'activeadmin'
 
+=======
+>>>>>>> 84dfd58ed9350fc0d340362d4667a58047fde1a4
 # ログイン機能
 gem 'devise'
 

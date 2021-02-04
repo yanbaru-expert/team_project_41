@@ -69,9 +69,12 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+<<<<<<< HEAD
     arbre (1.4.0)
       activesupport (>= 3.0.0, < 6.2)
       ruby2_keywords (>= 0.0.2, < 1.0)
+=======
+>>>>>>> 84dfd58ed9350fc0d340362d4667a58047fde1a4
     bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.5.1)
@@ -202,7 +205,10 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+<<<<<<< HEAD
     ruby2_keywords (0.0.4)
+=======
+>>>>>>> 84dfd58ed9350fc0d340362d4667a58047fde1a4
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)

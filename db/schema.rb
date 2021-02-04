@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2021_02_01_091606) do
+=======
+ActiveRecord::Schema.define(version: 2021_01_25_091051) do
+>>>>>>> 84dfd58ed9350fc0d340362d4667a58047fde1a4
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -41,6 +46,8 @@ ActiveRecord::Schema.define(version: 2021_02_01_091606) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+=======
+>>>>>>> 84dfd58ed9350fc0d340362d4667a58047fde1a4
   create_table "movies", force: :cascade do |t|
     t.string "genre"
     t.string "title"
