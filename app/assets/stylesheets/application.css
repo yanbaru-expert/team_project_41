@@ -1,0 +1,11 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+.alert-notice {
+  @extend .alert-info;
+}
+.alert-alert {
+  @extend .alert-danger;
+}
