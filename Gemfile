@@ -22,10 +22,15 @@ gem 'devise'
 gem 'rails-i18n'
 gem 'devise-i18n'
 
+<<<<<<< HEAD
+#Bootstrap
+gem 'devise-bootstrap-views'
+=======
 # マークダウン形式で表示するためのgem
 gem 'redcarpet', '~> 2.3.0'
 # シンタックスハイライトに対応させるためのgem
 gem 'coderay'
+>>>>>>> origin/develop
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
