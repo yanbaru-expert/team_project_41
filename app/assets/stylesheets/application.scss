@@ -5,6 +5,10 @@
 
  @import "bootstrap/scss/bootstrap";
 
+ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+ @import "@fortawesome/fontawesome-free/scss/fontawesome";
+ @import "@fortawesome/fontawesome-free/scss/regular";
+
 /* 全体 */
 
 body {
@@ -34,7 +38,7 @@ body {
    margin-bottom: 50px;
  }
 
- 
+
 
  .search-icon {
    position: absolute;
