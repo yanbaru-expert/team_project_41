@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark mw-lg mx-auto">
-  <a class="navbar-brand" href="/">やんばるCODE</a>
+  <%= link_to "やんばるCODE", texts_path(genre: ["Basic","Git","Ruby","Ruby on Rails"]), class: "navbar-brand" %>
   <button class="navbar-toggler active" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,12 +10,13 @@
           Rails
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/">Ruby/Rails教材</a>
+          <%= link_to "Ruby/Rails教材", texts_path(genre: ["Basic","Git","Ruby","Ruby on Rails"]), class: "dropdown-item" %>
+          <%# <a class="dropdown-item" href="/">Ruby/Rails教材</a> %>
           <a class="dropdown-item" href="/movies">動画教材</a>
-          <a class="dropdown-item" href="#">AWS講座</a>
+          <%= link_to "AWS講座", texts_path(genre: "AWS"), class: "dropdown-item" %>
           <a class="dropdown-item" href="#">プログラミング勉強会</a>
           <a class="dropdown-item" href="#">質問集</a>
-          <a class="dropdown-item" href="#">チャレンジ問題集</a>
+          <%= link_to "チャレンジ問題集", texts_path(genre: ""), class: "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item dropdown active">
@@ -23,7 +24,8 @@
           PHP
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">PHPテキスト教材</a>
+          <%= link_to "PHPテキスト教材", texts_path(genre: "Php"), class: "dropdown-item" %>
+          <%# <a class="dropdown-item" href="#">PHPテキスト教材</a> %>
           <a class="dropdown-item" href="#">PHP動画教材</a>
         </div>
       </li>

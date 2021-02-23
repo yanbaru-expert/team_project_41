@@ -1,6 +1,6 @@
 class TextsController < ApplicationController
   def index
-    @texts = Text.all
+    @texts = Text.where(genre: params[:genre])
   end
 
   def show
