@@ -5,6 +5,10 @@
 
  @import "bootstrap/scss/bootstrap";
 
+ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+ @import "@fortawesome/fontawesome-free/scss/fontawesome";
+ @import "@fortawesome/fontawesome-free/scss/regular";
+
 /* 全体 */
 
 body {
@@ -33,6 +37,24 @@ body {
     padding-right: 9px;
    margin-bottom: 50px;
  }
+
+.search-form {
+  max-width: 350px;
+
+
+ .search-icon {
+   position: absolute;
+   top: 30%;
+   left: 5%;
+   z-index: 100;
+ }
+
+ .text-search {
+   height: 50px;
+   padding-left: 50px;
+ }
+}
+
 
 /* max-width */
 
