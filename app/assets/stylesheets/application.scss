@@ -3,11 +3,11 @@
  *= require_self
  */
 
- @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
- $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
- @import "@fortawesome/fontawesome-free/scss/fontawesome";
- @import "@fortawesome/fontawesome-free/scss/regular";
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
 
 /* 全体 */
 
@@ -24,35 +24,35 @@ body {
   background-color: #5D99FB;
 }
 
- .nav-link {
-   font-size: 0.8rem;
- }
+.nav-link {
+  font-size: 0.8rem;
+}
 
- .text-title {
-   text-align: center;
- }
+.text-title {
+  text-align: center;
+}
 
- .text-card-container {
-    padding-left: 9px;
-    padding-right: 9px;
-   margin-bottom: 50px;
- }
+.text-card-container {
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-bottom: 50px;
+}
 
 .search-form {
   max-width: 350px;
 
 
- .search-icon {
-   position: absolute;
-   top: 30%;
-   left: 5%;
-   z-index: 100;
- }
+  .search-icon {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 100;
+  }
 
- .text-search {
-   height: 50px;
-   padding-left: 50px;
- }
+  .text-search {
+    height: 50px;
+    padding-left: 50px;
+  }
 }
 
 
